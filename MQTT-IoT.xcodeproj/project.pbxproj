@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1121CB172B4D9A5F00131F04 /* AverageValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121CB162B4D9A5F00131F04 /* AverageValues.swift */; };
+		11576A9F2B384CEE00FBBD4A /* MQTT_IoTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576A9E2B384CEE00FBBD4A /* MQTT_IoTApp.swift */; };
+		11576AA12B384CEE00FBBD4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AA02B384CEE00FBBD4A /* ContentView.swift */; };
+		11576AA32B384CF200FBBD4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11576AA22B384CF200FBBD4A /* Assets.xcassets */; };
+		11576AA62B384CF200FBBD4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11576AA52B384CF200FBBD4A /* Preview Assets.xcassets */; };
+		11576AAD2B384D3200FBBD4A /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AAC2B384D3100FBBD4A /* MQTT.swift */; };
+		11576AB02B384D5D00FBBD4A /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 11576AAF2B384D5D00FBBD4A /* MQTTNIO */; };
+		116D7A9E2B7A730300038308 /* MQTT_IoT_macApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D7A9D2B7A730300038308 /* MQTT_IoT_macApp.swift */; };
+		116D7AA22B7A730500038308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116D7AA12B7A730500038308 /* Assets.xcassets */; };
+		116D7AA52B7A730500038308 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116D7AA42B7A730500038308 /* Preview Assets.xcassets */; };
+		116D7AAA2B7A731F00038308 /* PowerSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EC2B3F01BB003E115A /* PowerSaveView.swift */; };
+		116D7AAB2B7A731F00038308 /* NSCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5ED2B6F90FB005EF64D /* NSCRView.swift */; };
+		116D7AAC2B7A731F00038308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AA02B384CEE00FBBD4A /* ContentView.swift */; };
+		116D7AAD2B7A731F00038308 /* APCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5E82B3CC189003E115A /* APCView.swift */; };
+		116D7AAE2B7A731F00038308 /* AverageValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121CB162B4D9A5F00131F04 /* AverageValues.swift */; };
+		116D7AAF2B7A731F00038308 /* Pruebas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5F62B6FAD05005EF64D /* Pruebas.swift */; };
+		116D7AB02B7A732300038308 /* HPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EE2B3F0204003E115A /* HPC.swift */; };
+		116D7AB12B7A732300038308 /* APC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EA2B3CC1BF003E115A /* APC.swift */; };
+		116D7AB22B7A732300038308 /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AAC2B384D3100FBBD4A /* MQTT.swift */; };
+		116D7AB32B7A732300038308 /* NSCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5EF2B6F9131005EF64D /* NSCR.swift */; };
+		116D7AB52B7A736800038308 /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 116D7AB42B7A736800038308 /* MQTTNIO */; };
+		1187E5E92B3CC189003E115A /* APCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5E82B3CC189003E115A /* APCView.swift */; };
+		1187E5EB2B3CC1C0003E115A /* APC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EA2B3CC1BF003E115A /* APC.swift */; };
+		1187E5ED2B3F01BB003E115A /* PowerSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EC2B3F01BB003E115A /* PowerSaveView.swift */; };
+		1187E5EF2B3F0204003E115A /* HPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EE2B3F0204003E115A /* HPC.swift */; };
+		11CFF5D02B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 11CFF5CF2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11CFF5D52B6E5E96005EF64D /* MQTT_IOT_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5D42B6E5E96005EF64D /* MQTT_IOT_WatchApp.swift */; };
+		11CFF5D92B6E5E98005EF64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CFF5D82B6E5E98005EF64D /* Assets.xcassets */; };
+		11CFF5DC2B6E5E98005EF64D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CFF5DB2B6E5E98005EF64D /* Preview Assets.xcassets */; };
+		11CFF5E52B6E5F04005EF64D /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 11CFF5E42B6E5F04005EF64D /* MQTTNIO */; };
+		11CFF5E62B6E5F0E005EF64D /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AAC2B384D3100FBBD4A /* MQTT.swift */; };
+		11CFF5E72B6E5F0E005EF64D /* APC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EA2B3CC1BF003E115A /* APC.swift */; };
+		11CFF5E82B6E5F0E005EF64D /* HPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EE2B3F0204003E115A /* HPC.swift */; };
+		11CFF5E92B6E5F16005EF64D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576AA02B384CEE00FBBD4A /* ContentView.swift */; };
+		11CFF5EA2B6E5F16005EF64D /* PowerSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5EC2B3F01BB003E115A /* PowerSaveView.swift */; };
+		11CFF5EB2B6E5F16005EF64D /* APCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E5E82B3CC189003E115A /* APCView.swift */; };
+		11CFF5EC2B6E5F16005EF64D /* AverageValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121CB162B4D9A5F00131F04 /* AverageValues.swift */; };
+		11CFF5EE2B6F90FB005EF64D /* NSCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5ED2B6F90FB005EF64D /* NSCRView.swift */; };
+		11CFF5F02B6F9131005EF64D /* NSCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5EF2B6F9131005EF64D /* NSCR.swift */; };
+		11CFF5F12B6FA3F2005EF64D /* NSCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5EF2B6F9131005EF64D /* NSCR.swift */; };
+		11CFF5F52B6FA5AB005EF64D /* NSCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5F42B6FA5AB005EF64D /* NSCRView.swift */; };
+		11CFF5F72B6FAD06005EF64D /* Pruebas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CFF5F62B6FAD05005EF64D /* Pruebas.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11CFF5D12B6E5E96005EF64D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11576A932B384CEE00FBBD4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11CFF5CE2B6E5E96005EF64D;
+			remoteInfo = "MQTT-IOT-Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11CFF5BA2B6E5C45005EF64D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11CFF5E02B6E5E98005EF64D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				11CFF5D02B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1121CB162B4D9A5F00131F04 /* AverageValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageValues.swift; sourceTree = "<group>"; };
+		11576A9B2B384CEE00FBBD4A /* MQTT-IoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MQTT-IoT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11576A9E2B384CEE00FBBD4A /* MQTT_IoTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT_IoTApp.swift; sourceTree = "<group>"; };
+		11576AA02B384CEE00FBBD4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11576AA22B384CF200FBBD4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11576AA52B384CF200FBBD4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11576AAC2B384D3100FBBD4A /* MQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		116D7A9B2B7A730300038308 /* MQTT-IoT-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MQTT-IoT-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		116D7A9D2B7A730300038308 /* MQTT_IoT_macApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT_IoT_macApp.swift; sourceTree = "<group>"; };
+		116D7AA12B7A730500038308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		116D7AA42B7A730500038308 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		116D7AA62B7A730500038308 /* MQTT_IoT_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MQTT_IoT_mac.entitlements; sourceTree = "<group>"; };
+		1187E5E82B3CC189003E115A /* APCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCView.swift; sourceTree = "<group>"; };
+		1187E5EA2B3CC1BF003E115A /* APC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APC.swift; sourceTree = "<group>"; };
+		1187E5EC2B3F01BB003E115A /* PowerSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSaveView.swift; sourceTree = "<group>"; };
+		1187E5EE2B3F0204003E115A /* HPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPC.swift; sourceTree = "<group>"; };
+		11CFF5CA2B6E5E96005EF64D /* MQTT-IOT-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MQTT-IOT-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11CFF5CF2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MQTT-IOT-Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11CFF5D42B6E5E96005EF64D /* MQTT_IOT_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT_IOT_WatchApp.swift; sourceTree = "<group>"; };
+		11CFF5D82B6E5E98005EF64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11CFF5DB2B6E5E98005EF64D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11CFF5ED2B6F90FB005EF64D /* NSCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCRView.swift; sourceTree = "<group>"; };
+		11CFF5EF2B6F9131005EF64D /* NSCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCR.swift; sourceTree = "<group>"; };
+		11CFF5F42B6FA5AB005EF64D /* NSCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCRView.swift; sourceTree = "<group>"; };
+		11CFF5F62B6FAD05005EF64D /* Pruebas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pruebas.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11576A982B384CEE00FBBD4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11576AB02B384D5D00FBBD4A /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116D7A982B7A730300038308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116D7AB52B7A736800038308 /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11CFF5CC2B6E5E96005EF64D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CFF5E52B6E5F04005EF64D /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11576A922B384CEE00FBBD4A = {
+			isa = PBXGroup;
+			children = (
+				11576A9D2B384CEE00FBBD4A /* MQTT-IoT */,
+				11CFF5D32B6E5E96005EF64D /* MQTT-IOT-Watch Watch App */,
+				116D7A9C2B7A730300038308 /* MQTT-IoT-mac */,
+				11576A9C2B384CEE00FBBD4A /* Products */,
+				11CFF5C52B6E5CAE005EF64D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11576A9C2B384CEE00FBBD4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11576A9B2B384CEE00FBBD4A /* MQTT-IoT.app */,
+				11CFF5CA2B6E5E96005EF64D /* MQTT-IOT-Watch.app */,
+				11CFF5CF2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app */,
+				116D7A9B2B7A730300038308 /* MQTT-IoT-mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11576A9D2B384CEE00FBBD4A /* MQTT-IoT */ = {
+			isa = PBXGroup;
+			children = (
+				1179052C2B5852750088013B /* Model */,
+				1179052B2B5852630088013B /* View */,
+				11576A9E2B384CEE00FBBD4A /* MQTT_IoTApp.swift */,
+				11576AA22B384CF200FBBD4A /* Assets.xcassets */,
+				11576AA42B384CF200FBBD4A /* Preview Content */,
+			);
+			path = "MQTT-IoT";
+			sourceTree = "<group>";
+		};
+		11576AA42B384CF200FBBD4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11576AA52B384CF200FBBD4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		116D7A9C2B7A730300038308 /* MQTT-IoT-mac */ = {
+			isa = PBXGroup;
+			children = (
+				116D7A9D2B7A730300038308 /* MQTT_IoT_macApp.swift */,
+				116D7AA12B7A730500038308 /* Assets.xcassets */,
+				116D7AA62B7A730500038308 /* MQTT_IoT_mac.entitlements */,
+				116D7AA32B7A730500038308 /* Preview Content */,
+			);
+			path = "MQTT-IoT-mac";
+			sourceTree = "<group>";
+		};
+		116D7AA32B7A730500038308 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				116D7AA42B7A730500038308 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1179052B2B5852630088013B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1121CB162B4D9A5F00131F04 /* AverageValues.swift */,
+				11576AA02B384CEE00FBBD4A /* ContentView.swift */,
+				1187E5E82B3CC189003E115A /* APCView.swift */,
+				11CFF5ED2B6F90FB005EF64D /* NSCRView.swift */,
+				11CFF5F62B6FAD05005EF64D /* Pruebas.swift */,
+				1187E5EC2B3F01BB003E115A /* PowerSaveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1179052C2B5852750088013B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1187E5EA2B3CC1BF003E115A /* APC.swift */,
+				11CFF5EF2B6F9131005EF64D /* NSCR.swift */,
+				11576AAC2B384D3100FBBD4A /* MQTT.swift */,
+				1187E5EE2B3F0204003E115A /* HPC.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11CFF5C52B6E5CAE005EF64D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11CFF5D32B6E5E96005EF64D /* MQTT-IOT-Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				11CFF5F32B6FA5A0005EF64D /* View */,
+				11CFF5D42B6E5E96005EF64D /* MQTT_IOT_WatchApp.swift */,
+				11CFF5D82B6E5E98005EF64D /* Assets.xcassets */,
+				11CFF5DA2B6E5E98005EF64D /* Preview Content */,
+			);
+			path = "MQTT-IOT-Watch Watch App";
+			sourceTree = "<group>";
+		};
+		11CFF5DA2B6E5E98005EF64D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11CFF5DB2B6E5E98005EF64D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11CFF5F32B6FA5A0005EF64D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11CFF5F42B6FA5AB005EF64D /* NSCRView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11576A9A2B384CEE00FBBD4A /* MQTT-IoT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11576AA92B384CF200FBBD4A /* Build configuration list for PBXNativeTarget "MQTT-IoT" */;
+			buildPhases = (
+				11576A972B384CEE00FBBD4A /* Sources */,
+				11576A982B384CEE00FBBD4A /* Frameworks */,
+				11576A992B384CEE00FBBD4A /* Resources */,
+				11CFF5BA2B6E5C45005EF64D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MQTT-IoT";
+			packageProductDependencies = (
+				11576AAF2B384D5D00FBBD4A /* MQTTNIO */,
+			);
+			productName = "MQTT-IoT";
+			productReference = 11576A9B2B384CEE00FBBD4A /* MQTT-IoT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		116D7A9A2B7A730300038308 /* MQTT-IoT-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116D7AA92B7A730500038308 /* Build configuration list for PBXNativeTarget "MQTT-IoT-mac" */;
+			buildPhases = (
+				116D7A972B7A730300038308 /* Sources */,
+				116D7A982B7A730300038308 /* Frameworks */,
+				116D7A992B7A730300038308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MQTT-IoT-mac";
+			packageProductDependencies = (
+				116D7AB42B7A736800038308 /* MQTTNIO */,
+			);
+			productName = "MQTT-IoT-mac";
+			productReference = 116D7A9B2B7A730300038308 /* MQTT-IoT-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11CFF5C92B6E5E96005EF64D /* MQTT-IOT-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11CFF5E12B6E5E98005EF64D /* Build configuration list for PBXNativeTarget "MQTT-IOT-Watch" */;
+			buildPhases = (
+				11CFF5C82B6E5E96005EF64D /* Resources */,
+				11CFF5E02B6E5E98005EF64D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11CFF5D22B6E5E96005EF64D /* PBXTargetDependency */,
+			);
+			name = "MQTT-IOT-Watch";
+			productName = "MQTT-IOT-Watch";
+			productReference = 11CFF5CA2B6E5E96005EF64D /* MQTT-IOT-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		11CFF5CE2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11CFF5DD2B6E5E98005EF64D /* Build configuration list for PBXNativeTarget "MQTT-IOT-Watch Watch App" */;
+			buildPhases = (
+				11CFF5CB2B6E5E96005EF64D /* Sources */,
+				11CFF5CC2B6E5E96005EF64D /* Frameworks */,
+				11CFF5CD2B6E5E96005EF64D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MQTT-IOT-Watch Watch App";
+			packageProductDependencies = (
+				11CFF5E42B6E5F04005EF64D /* MQTTNIO */,
+			);
+			productName = "MQTT-IOT-Watch Watch App";
+			productReference = 11CFF5CF2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11576A932B384CEE00FBBD4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					11576A9A2B384CEE00FBBD4A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					116D7A9A2B7A730300038308 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					11CFF5C92B6E5E96005EF64D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					11CFF5CE2B6E5E96005EF64D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 11576A962B384CEE00FBBD4A /* Build configuration list for PBXProject "MQTT-IoT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11576A922B384CEE00FBBD4A;
+			packageReferences = (
+				11576AAE2B384D5D00FBBD4A /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+			);
+			productRefGroup = 11576A9C2B384CEE00FBBD4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11576A9A2B384CEE00FBBD4A /* MQTT-IoT */,
+				11CFF5C92B6E5E96005EF64D /* MQTT-IOT-Watch */,
+				11CFF5CE2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App */,
+				116D7A9A2B7A730300038308 /* MQTT-IoT-mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11576A992B384CEE00FBBD4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11576AA62B384CF200FBBD4A /* Preview Assets.xcassets in Resources */,
+				11576AA32B384CF200FBBD4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116D7A992B7A730300038308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116D7AA52B7A730500038308 /* Preview Assets.xcassets in Resources */,
+				116D7AA22B7A730500038308 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11CFF5C82B6E5E96005EF64D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11CFF5CD2B6E5E96005EF64D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CFF5DC2B6E5E98005EF64D /* Preview Assets.xcassets in Resources */,
+				11CFF5D92B6E5E98005EF64D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11576A972B384CEE00FBBD4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1187E5EF2B3F0204003E115A /* HPC.swift in Sources */,
+				11CFF5F72B6FAD06005EF64D /* Pruebas.swift in Sources */,
+				11CFF5F02B6F9131005EF64D /* NSCR.swift in Sources */,
+				11CFF5EE2B6F90FB005EF64D /* NSCRView.swift in Sources */,
+				1121CB172B4D9A5F00131F04 /* AverageValues.swift in Sources */,
+				11576AA12B384CEE00FBBD4A /* ContentView.swift in Sources */,
+				11576A9F2B384CEE00FBBD4A /* MQTT_IoTApp.swift in Sources */,
+				11576AAD2B384D3200FBBD4A /* MQTT.swift in Sources */,
+				1187E5ED2B3F01BB003E115A /* PowerSaveView.swift in Sources */,
+				1187E5E92B3CC189003E115A /* APCView.swift in Sources */,
+				1187E5EB2B3CC1C0003E115A /* APC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116D7A972B7A730300038308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116D7A9E2B7A730300038308 /* MQTT_IoT_macApp.swift in Sources */,
+				116D7AAE2B7A731F00038308 /* AverageValues.swift in Sources */,
+				116D7AAF2B7A731F00038308 /* Pruebas.swift in Sources */,
+				116D7AB22B7A732300038308 /* MQTT.swift in Sources */,
+				116D7AAB2B7A731F00038308 /* NSCRView.swift in Sources */,
+				116D7AAD2B7A731F00038308 /* APCView.swift in Sources */,
+				116D7AAC2B7A731F00038308 /* ContentView.swift in Sources */,
+				116D7AAA2B7A731F00038308 /* PowerSaveView.swift in Sources */,
+				116D7AB12B7A732300038308 /* APC.swift in Sources */,
+				116D7AB02B7A732300038308 /* HPC.swift in Sources */,
+				116D7AB32B7A732300038308 /* NSCR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11CFF5CB2B6E5E96005EF64D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CFF5F52B6FA5AB005EF64D /* NSCRView.swift in Sources */,
+				11CFF5D52B6E5E96005EF64D /* MQTT_IOT_WatchApp.swift in Sources */,
+				11CFF5F12B6FA3F2005EF64D /* NSCR.swift in Sources */,
+				11CFF5EC2B6E5F16005EF64D /* AverageValues.swift in Sources */,
+				11CFF5E92B6E5F16005EF64D /* ContentView.swift in Sources */,
+				11CFF5E72B6E5F0E005EF64D /* APC.swift in Sources */,
+				11CFF5EA2B6E5F16005EF64D /* PowerSaveView.swift in Sources */,
+				11CFF5EB2B6E5F16005EF64D /* APCView.swift in Sources */,
+				11CFF5E62B6E5F0E005EF64D /* MQTT.swift in Sources */,
+				11CFF5E82B6E5F0E005EF64D /* HPC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11CFF5D22B6E5E96005EF64D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11CFF5CE2B6E5E96005EF64D /* MQTT-IOT-Watch Watch App */;
+			targetProxy = 11CFF5D12B6E5E96005EF64D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11576AA72B384CF200FBBD4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11576AA82B384CF200FBBD4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11576AAA2B384CF200FBBD4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IoT/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IoT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11576AAB2B384CF200FBBD4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IoT/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IoT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		116D7AA72B7A730500038308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MQTT-IoT-mac/MQTT_IoT_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IoT-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IoT-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		116D7AA82B7A730500038308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MQTT-IoT-mac/MQTT_IoT_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IoT-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IoT-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		11CFF5DE2B6E5E98005EF64D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IOT-Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MQTT-IOT-Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IOT-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		11CFF5DF2B6E5E98005EF64D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MQTT-IOT-Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MQTT-IOT-Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IOT-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		11CFF5E22B6E5E98005EF64D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				INFOPLIST_KEY_CFBundleDisplayName = "MQTT-IOT-Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IOT-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		11CFF5E32B6E5E98005EF64D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5JV69ZFN5A;
+				INFOPLIST_KEY_CFBundleDisplayName = "MQTT-IOT-Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msn.MQTT-IOT-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11576A962B384CEE00FBBD4A /* Build configuration list for PBXProject "MQTT-IoT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11576AA72B384CF200FBBD4A /* Debug */,
+				11576AA82B384CF200FBBD4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11576AA92B384CF200FBBD4A /* Build configuration list for PBXNativeTarget "MQTT-IoT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11576AAA2B384CF200FBBD4A /* Debug */,
+				11576AAB2B384CF200FBBD4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		116D7AA92B7A730500038308 /* Build configuration list for PBXNativeTarget "MQTT-IoT-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116D7AA72B7A730500038308 /* Debug */,
+				116D7AA82B7A730500038308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11CFF5DD2B6E5E98005EF64D /* Build configuration list for PBXNativeTarget "MQTT-IOT-Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11CFF5DE2B6E5E98005EF64D /* Debug */,
+				11CFF5DF2B6E5E98005EF64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11CFF5E12B6E5E98005EF64D /* Build configuration list for PBXNativeTarget "MQTT-IOT-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11CFF5E22B6E5E98005EF64D /* Debug */,
+				11CFF5E32B6E5E98005EF64D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11576AAE2B384D5D00FBBD4A /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sroebert/mqtt-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11576AAF2B384D5D00FBBD4A /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11576AAE2B384D5D00FBBD4A /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+		116D7AB42B7A736800038308 /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11576AAE2B384D5D00FBBD4A /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+		11CFF5E42B6E5F04005EF64D /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11576AAE2B384D5D00FBBD4A /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11576A932B384CEE00FBBD4A /* Project object */;
+}
